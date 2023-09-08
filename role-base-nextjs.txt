@@ -1,0 +1,3 @@
+https://github.com/gitdagray/next-auth-role-based/tree/main
+
+https://stackoverflow.com/questions/75002714/next-js-can-i-configure-multiple-image-hostnames-in-next-config-js

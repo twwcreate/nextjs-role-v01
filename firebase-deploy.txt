@@ -1,0 +1,37 @@
+In next.config.js:
+add  output: 'export':
+.......................
+const nextConfig = {
+    reactStrictMode: true,
+    images: {
+      remotePatterns: hostnames.map(hostname => ({
+          protocol: 'https',
+          hostname
+      }))
+    },
+    output: 'export'
+  };
+.......................
+1)npm install firebase
+firebase-init
+Firebase Initializer with configuration variable via config file, 
+environment variable, package, npm or cli.
+通過配置文件使用配置變量的 Firebase 初始化程序，
+環境變量、包、npm 或 cli。
+2)firebase init , npm i firebase-init
+
+firebase init failed??
+
+https://stackoverflow.com/questions/39496990/not-able-to-complete-execution-of-the-firebase-init-command-form-directory-conta
+
+It sounds like you might be signed in to an old account or using an old version of the CLI.
+
+Can you take these steps:
+firebase logout
+npm install -g firebase-tools
+firebase login
+firebase init again
+
+
+
+
