@@ -5,28 +5,10 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 export const options = {
     providers: [
         FacebookProvider({
-            profile(profile) {
-                //console.log(profile)
-                // return {
-                //     ...profile,
-                //     role: profile.role ?? "user",
-                //     id: profile.id.toString(),
-                //     image: profile.image,
-                // }
-            },
               clientId: process.env.FACEBOOK_CLIENT_ID,
               clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
             }),
         GoogleProvider({
-            profile(profile) {
-                //console.log(profile)
-                // return {
-                //     ...profile,
-                //     role: profile.role ?? "user",
-                //     id: profile.id.toString(),
-                //     image: profile.image,
-                // }
-            },
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
         }),
